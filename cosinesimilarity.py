@@ -25,8 +25,8 @@ selected_song_features = filtered_songs[['tempo', 'key', 'loudness']].values
 # Fetch Spotify recommended songs using spotipy
 scope ='playlist-modify-private'
 redirect_uri='https://www.google.com/search?q=%C3%B6vers%C3%A4tt&rlz=1C1GTPM_enSE912SE912&oq=%C3%B6vers%C3%A4tt&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIGCAEQIxgnMg0IAhAAGIMBGLEDGIAEMg0IAxAAGIMBGLEDGIAEMgcIBBAAGIAEMg0IBRAAGIMBGLEDGIAEMgYIBhBFGD0yBggHEEUYPdIBCDExMTlqMGo5qAIAsAIA&sourceid=chrome&ie=UTF-8'
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='f37ea1a1d5a54cc78cf7ef5899edc292',
-                                               client_secret='60d57c2b53e34cbbab7cce785d8d264f',
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id='',
+                                               client_secret='',
                                                redirect_uri=redirect_uri,
                                                scope=scope))
 
